@@ -205,3 +205,8 @@ bindsym $mod+F3 exec "gedit"
 
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+#Gaps
+gaps inner 4
+gaps outer 4
+smart_gaps on
