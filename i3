@@ -199,9 +199,9 @@ bindsym $mod+shift+l exec "killall xautolock || xautolock -time 5 -locker '~/.sc
 exec --no-startup-id gnome-settings-daemon
 
 #My Apps
-bindsym $mod+F1 exec "dolphin"
+bindsym $mod+F1 exec "urxvt -e nnn"
 bindsym $mod+F2 exec "chromium"
-bindsym $mod+F3 exec "gedit"
+bindsym $mod+F3 exec "urxvt -e vim"
 
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
