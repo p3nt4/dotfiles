@@ -67,8 +67,13 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-    map <C-n> :NERDTreeToggle<CR>
+
+map <C-n> :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 execute pathogen#infect()
 call pathogen#helptags()
+
+vnoremap <C-c> "+yi 
+noremap <C-z> <esc>ui
+set clipboard=unnamedplus
